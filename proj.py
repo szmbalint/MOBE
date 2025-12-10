@@ -71,6 +71,7 @@ master_gdf = gdf_geo.merge(
 
 # --- 2. DASH APP LAYOUT ---
 app = dash.Dash(__name__)
+server = app.server
 
 app.layout = html.Div([
     html.H1("Magyarország Bűnügyi Elemző (2009-2024)", 
